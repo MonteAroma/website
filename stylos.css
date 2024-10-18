@@ -172,8 +172,10 @@ body {
     }
     
     .Pinicial{
-        height: 500px;
+        height: 450px;
         margin-top: 10px;
+        padding-top: 10px;
+
     }
 
     .Pinicial p{
@@ -198,7 +200,7 @@ body {
         
     .contenido{
        width: 300px; 
-       margin-left: 2%;
+       margin-left: 5%;
     }
 
 
