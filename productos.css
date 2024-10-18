@@ -1,0 +1,301 @@
+body {
+    background: #f1f1f1;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin: 0%;
+}
+
+h1{
+    margin-left: 45%; 
+    position: absolute; 
+    top: 30px; 
+    color: #444; 
+    font-size: 45px; 
+}
+
+.seccionDeProductos {
+    width: 1300px;
+    height: 500px;
+    margin-left: 165px;
+    padding-left: 115px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.conjuntos {
+    flex-wrap: wrap;
+    width: 250px;
+    height: 350px;
+    background-color: #c6ddcf;
+    border: 1px solid rgb(218, 209, 209);
+    border-radius: 3px;
+    margin: 5px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: 0px solid black;
+}
+
+
+.conjuntos img {
+    background-color: #f1f1f1;
+    color: white;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    line-height: 40px;
+    box-shadow: 0px 2px 5px 4px #444;
+}
+
+
+.VerProductos {
+    width: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+/* Secciones*/
+
+
+.sectionAromatica, .sectionCondimentos, .sectionAceitesE, .sectionAceitesM {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#conjunto1, #conjunto2, #conjunto3, #conjunto4 {
+    transition: transform 0.5s ease-in-out; 
+}
+
+
+
+#conjunto1:hover, 
+#conjunto2:hover,
+#conjunto3:hover,
+#conjunto4:hover {
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(10, 9, 9, 0.767);
+    transform: translateY(20px); 
+}
+
+.BverMas{
+    padding: 5px;
+    width: 200px;
+    border: 2px solid #eee;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    transition: all .5s;
+}
+
+.BverMas:hover{
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+}
+
+/* Modales */
+
+.modales{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    max-width: 1028px;
+    min-width: 1028px;
+    min-height: 100%;
+    top: 0%;
+    left: 280px;
+    font-family: sans-serif;
+    padding-left: 40px;
+}
+
+.tarjeta {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: 40px;
+    border-radius: 5px;
+    perspective: 1000px; /* Agregado para la perspectiva */
+    cursor: pointer;
+    float: left;
+}
+
+.tarjeta .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .9s;
+}
+
+.tarjeta .front {
+    transform: rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+    background-color: #161B21;
+
+}
+
+.tarjeta .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    background: rgba(224, 216, 216, 0.4);
+    margin: 0;
+}
+
+.tarjeta .front img {
+    object-fit: cover;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.tarjeta .back {
+    transform: rotateY(180deg);
+    background-color: #161B21;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+    border-radius: 5px; 
+    text-align: center;
+}
+
+.back ol{
+    list-style-type: none; /* Quita la numeración */
+    padding-left: 0;       /* Ajusta el padding si es necesario */
+    margin-left: 0;        /* Ajusta el margin si es necesario */
+    border: 1px solid greenyellow;
+}
+
+.back h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.back ol{
+    margin-top: 0%;
+    width: 100%;
+    height: 350px;
+}
+
+.back ol li{
+    margin: 10px 0;       /* Añade espacio entre los elementos de la lista */
+    padding: 0px;        /* Añade padding a cada elemento de la lista */
+    border-radius: 5px;    /* Redondea las esquinas */
+}
+
+.tarjeta:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.tarjeta:hover .back {
+    transform: rotateY(0deg);
+}
+
+
+.modales a{
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 500px){
+  
+    h1{
+        margin-left: 12%; 
+        position: absolute; 
+        top: 30px; 
+        color: #444; 
+        font-size: 45px; 
+    }
+
+    .conjuntos {
+        flex-direction: column; /* Cambiamos a columna para apilar los elementos */
+        width: 310px;
+        height: 190px;
+        background-color: #c6ddcf;
+        border: 1px solid rgb(218, 209, 209);
+        border-radius: 3px;
+        margin: 5px;
+        float: left;
+        display: block;
+        justify-content: center;
+        align-items: center; /* Alinea los elementos en el centro */
+        color: white;
+    }
+
+    .seccionDeProductos {
+        width: 430px;
+        height: 932px;
+        margin-left: 40px;
+        padding-top: 200px;
+        padding-left: 40px;
+        justify-content: column;
+        display: block;
+    }
+
+    .seccionDeProductos .parrafos{
+        display: none;
+    }
+
+    .BverMas{
+        padding: 5px;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    
+
+    #conjunto1:hover, 
+    #conjunto2:hover,
+    #conjunto3:hover,
+    #conjunto4:hover {
+        transform: translateY(0px); 
+    }
+
+    .conjuntos img {
+        background-color: #f1f1f1;
+        padding: 5px;
+        line-height: 0%;
+        box-shadow: 0px 2px 5px 2px #444;
+    }
+
+    .modales{
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        left: 0%;
+    }
+
+    .tarjeta {
+        position: relative;
+        width: 250px;
+        height: 300px;
+        margin: 40px;
+        border-radius: 5px;
+        perspective: 1000px; /* Agregado para la perspectiva */
+        cursor: pointer;
+        float: none;
+    }
+    
+
+}

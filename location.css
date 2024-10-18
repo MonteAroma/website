@@ -1,0 +1,57 @@
+
+body{
+    font-family:'Gill Sans';
+    height: auto;
+}
+
+.container{
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 1029px;
+    height: 100%;
+    left: 320px;
+    top: 0%;
+}
+
+#parrafo {
+    font-size: 30px;
+    color: #454f5a;
+    font-family: Calibri, sans-serif;
+    margin-left: 0%;
+}   
+
+@media (max-width: 500px) {
+
+    
+
+    .container{
+        position: relative;
+        left: 0%;
+        top: 0%;
+        z-index: -1;
+        height: auto;
+    }
+
+    #parrafo {
+        position: relative;
+        font-size: 25px; 
+        margin-left: 80px; 
+        text-align: left;
+    }   
+
+    #LaUnion{
+        min-width: 338px;
+        max-height: 300px;
+        display: block;
+        object-fit: cover; /* Esto asegura que la imagen se corte y no se deforme */
+        overflow: hidden;
+        margin-left: 30%;
+    }   
+
+    #UnionMap{
+        margin-top: 50px;
+        width: 431px;
+        height: 400px;
+        border: 0px;
+    }
+}

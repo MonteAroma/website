@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonteAroma _ Productos_Aromaticas</title>
+    <link rel="shortcut icon" href="Pictures/hoja.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylos.css">
+    <link rel="stylesheet" href="productos.css">
+
+</head>
+
+<body>
+
+    <h1 style="margin-left: 45%; position: absolute; top: 30px; color: #21A969; font-size: 50px; text-decoration: underline #444;"><strong>NUESTRA VARIEDAD DE AROMATICAS</strong></h1>
+
+    <div class="sidebar">
+        <img id="Saulo" src="Pictures/pixelcut-export.png">
+
+        <ul>
+            <br>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="#">PRODUCTOS</a></li>
+            <li><a href="historia.html">HISTORIA</a></li>
+            <li><a href="#">CONTACTO</a></li>
+            </br>
+        </ul>
+    </div>
+
+    <section class="seccionDeProductos">
+        
+        <div class="conjuntos">
+            <center>
+                <img src="Pictures/AromaticasICON.png" style="width: 50px; height: 50px;" alt="">
+                <h3>Aromaticas</h3>
+                <br>
+                <p>
+                    Nuestras hierbas aromáticas son naturales y de alta calidad, ideales para agregar sabor y aroma a tus platos. Perfectas para infusiones relajantes, condimentar comidas y dar un toque especial a tus bebidas.
+                </p>
+                <br>
+                <button class="VerProductos">MÁS</button>
+            </center>
+
+        </div>
+
+        <div class="conjuntos">
+            <center>
+                <img src="Pictures/condimentosICON.png" style="width: 50px; height: 50px;" alt="">
+                <h3>Condimentos</h3>
+                <br>
+                <p>
+                    Nuestros condimentos naturales realzan el sabor de tus comidas de forma saludable. Elaborados con ingredientes naturales, sin aditivos, son la opción perfecta para darle un toque gourmet a tus platos de manera sencilla y deliciosa.
+
+                </p>
+                <br>
+                <button class="VerProductos">MÁS</button>
+            </center>
+
+        </div>
+
+        <div class="conjuntos">
+            <center>
+                <img src="Pictures/aceites esenciales.png" style="width: 50px; height: 50px;" alt="">
+                <h3>Aceites esenciales</h3>
+                <br>
+                <p>
+                    Poderosos y puros, nuestros aceites esenciales son extraídos de plantas selectas y tienen diversas aplicaciones. Úsalos para aromaterapia, masajes relajantes, o añádelos a difusores para crear un ambiente calmante y revitalizante. 
+                </p>
+                <br>
+                <button class="VerProductos" > MÁS</button>
+            </center>
+
+        </div>
+
+        <div class="conjuntos">
+            <center>
+                <img src="Pictures/aceiteMaceradoICON.png" style="width: 50px; height: 50px;">
+                <h3>Aceites macerados</h>
+                <br>
+                <p>
+                    Infundidos con hierbas y flores, nuestros aceites macerados son perfectos para el cuidado natural de la piel y el cabello. Ideales para hidratar, suavizar y revitalizar, pues cuentan con múltiples componentes beneficiosos para abordar esos problemas de salud
+                <br>
+                <button class="VerProductos">MÁS</button>
+            </center>
+
+        </div>
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/d87d038996.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
