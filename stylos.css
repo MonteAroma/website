@@ -91,8 +91,7 @@ body {
 }
 
 .Pinicial{
-    height: 100%;
-    margin-top: 0px;
+    min-height: 100%;
 }
 
 .Pinicial p{
@@ -100,7 +99,7 @@ body {
 }
 
 .TituloMA{
-    font-size: 60px;
+    font-size: 58px;
     color: #444;
 }
 
@@ -108,8 +107,8 @@ body {
 #Lhoja {
     position: absolute;
     left: 29%;
-    top: 18%;
-    width: 130px;
+    top: 17%;
+    width: 120px;
 }
 
 .Sbutons {
@@ -164,6 +163,7 @@ body {
     }
 
     .sidebar ul{
+        top: 20%;
         position: absolute;
     }
 
@@ -172,28 +172,39 @@ body {
     }
     
     .Pinicial{
-        height: 300px;
+        height: 500px;
         margin-top: 10px;
-        
     }
 
     .Pinicial p{
        font-size: 15px;
     }
 
-    .TituloMA{
-        font-size: 50px;
-        color: #444;
-        margin-left: 24px;
-        position: absolute;
-        top: 13%;
-    }
-
     #Lhoja {
         position: absolute;
-        left: 192px;
+        left: 198px;
         top: 5%;
-        width: 100px;
+        width: 90px;
+    }
+
+    .TituloMA{
+        font-size: 45px;
+        color: #444;
+        margin-left: 46px;
+        position: absolute;
+        top: 10%;
+    }
+
+        
+    .contenido{
+       width: 300px; 
+       margin-left: 2%;
+    }
+
+
+    .Sbutons{
+        margin-left: 65px;
+        margin-top: 45%;
     }
 
     .Sbutons a{
